@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     npm \
     sqlite3 \
+    vim \
+    git \
     libsqlite3-dev \
     && rm -rf /var/lib/apt/lists/*
 
