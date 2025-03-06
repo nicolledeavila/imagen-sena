@@ -1,0 +1,125 @@
+Started GET "/user" for 172.17.0.1 at 2025-03-06 03:39:04 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='MiApi'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/favicon.ico" for 172.17.0.1 at 2025-03-06 03:39:05 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/user" for 172.17.0.1 at 2025-03-06 03:39:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/user" for 172.17.0.1 at 2025-03-06 03:40:26 +0000
+  
+ActionController::RoutingError (uninitialized constant UsersController)
+Caused by: ActionDispatch::MissingController (uninitialized constant UsersController)
+Caused by: NameError (uninitialized constant UsersController)
+
+Information for: ActionController::RoutingError (uninitialized constant UsersController):
+  
+
+Information for cause: ActionDispatch::MissingController (uninitialized constant UsersController):
+  
+actionpack (8.0.1) lib/action_dispatch/http/request.rb:102:in `rescue in controller_class_for'
+actionpack (8.0.1) lib/action_dispatch/http/request.rb:98:in `controller_class_for'
+actionpack (8.0.1) lib/action_dispatch/http/request.rb:91:in `controller_class'
+actionpack (8.0.1) lib/action_dispatch/routing/route_set.rb:61:in `controller'
+actionpack (8.0.1) lib/action_dispatch/routing/route_set.rb:48:in `serve'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.1) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.1) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.10) lib/rack/etag.rb:29:in `call'
+rack (3.1.10) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.10) lib/rack/head.rb:15:in `call'
+activerecord (8.0.1) lib/active_record/migration.rb:671:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.1) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+
+Information for cause: NameError (uninitialized constant UsersController):
+  
+activesupport (8.0.1) lib/active_support/inflector/methods.rb:290:in `constantize'
+activesupport (8.0.1) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (8.0.1) lib/action_dispatch/http/request.rb:99:in `controller_class_for'
+actionpack (8.0.1) lib/action_dispatch/http/request.rb:91:in `controller_class'
+actionpack (8.0.1) lib/action_dispatch/routing/route_set.rb:61:in `controller'
+actionpack (8.0.1) lib/action_dispatch/routing/route_set.rb:48:in `serve'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.1) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.1) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.10) lib/rack/etag.rb:29:in `call'
+rack (3.1.10) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.10) lib/rack/head.rb:15:in `call'
+activerecord (8.0.1) lib/active_record/migration.rb:671:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.1) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/user" for 172.17.0.1 at 2025-03-06 03:41:59 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/user" for 172.17.0.1 at 2025-03-06 03:43:35 +0000
+Processing by UserController#index as HTML
+  [1m[36mUser Load (67.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='MiApi',controller='user'*/[0m
+  ↳ app/controllers/user_controller.rb:8:in `index'
+Completed 200 OK in 579ms (Views: 135.1ms | ActiveRecord: 80.0ms (1 query, 0 cached) | GC: 23.7ms)
+
+
